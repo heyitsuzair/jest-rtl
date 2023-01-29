@@ -3,7 +3,12 @@ import Greet from "./Greet";
 
 test("Greet Renders Correctly", () => {
   render(<Greet />);
+  const textElement = screen.getByText("Hello");
+  expect(textElement).toBeInTheDocument();
+});
 
-  const textElement = screen.getByText(/hello/i);
+test("Greet Renders Correctly With Name", () => {
+  render(<Greet name="Uzair" />);
+  const textElement = screen.getByText("Hello Uzair");
   expect(textElement).toBeInTheDocument();
 });
