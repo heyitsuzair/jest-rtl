@@ -45,5 +45,8 @@ describe("Greet", () => {
 
     const displayValue = screen.getByDisplayValue("Hello Uzair");
     expect(displayValue).toBeInTheDocument();
+
+    const closeElement = screen.getByTitle("Close");
+    expect(closeElement).toBeInTheDocument();
   });
 });

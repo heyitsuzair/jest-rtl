@@ -6,6 +6,7 @@ const Greet = ({ name }: GreetProps) => {
       <h1>Page Heading</h1>
       <h2>Page Sub Heading</h2>
       <p>Greet Me</p>
+      <span title="Close"></span>
       Hello {name ? name : "Guest"}
       <label htmlFor="email">Email</label>
       <input
