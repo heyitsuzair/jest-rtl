@@ -48,5 +48,8 @@ describe("Greet", () => {
 
     const closeElement = screen.getByTitle("Close");
     expect(closeElement).toBeInTheDocument();
+
+    const dataTestId = screen.getByTestId("custom-elem");
+    expect(dataTestId).toBeInTheDocument();
   });
 });
