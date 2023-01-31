@@ -10,6 +10,11 @@ const Greet = ({ name }: GreetProps) => {
       <input type="text" placeholder="Enter Email" id="email" />
       <label htmlFor="description">Description</label>
       <textarea id="description"></textarea>
+      <label htmlFor="short_desc">Description</label>
+      <select name="short_desc" id="short_desc"></select>
+      <label>
+        <input type="text" /> I Agree
+      </label>
     </div>
   );
 };

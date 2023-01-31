@@ -28,5 +28,13 @@ describe("Greet", () => {
     });
     expect(pageHeading).toBeInTheDocument();
     expect(pageSubHeading).toBeInTheDocument();
+
+    const labelElement = screen.getByLabelText("Description", {
+      selector: "textarea",
+    });
+    expect(labelElement).toBeInTheDocument();
+
+    const labelWrapper = screen.getByLabelText("I Agree");
+    expect(labelWrapper).toBeInTheDocument();
   });
 });
