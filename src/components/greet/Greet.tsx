@@ -8,7 +8,13 @@ const Greet = ({ name }: GreetProps) => {
       <p>Greet Me</p>
       Hello {name ? name : "Guest"}
       <label htmlFor="email">Email</label>
-      <input type="text" placeholder="Enter Email" id="email" />
+      <input
+        type="text"
+        placeholder="Enter Email"
+        id="email"
+        value="Hello Uzair"
+        onChange={() => {}}
+      />
       <label htmlFor="description">Description</label>
       <textarea id="description"></textarea>
       <label htmlFor="short_desc">Description</label>

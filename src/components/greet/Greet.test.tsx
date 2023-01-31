@@ -41,7 +41,9 @@ describe("Greet", () => {
     expect(placeHolder).toBeInTheDocument();
 
     const paragraphElement = screen.getByText("Greet Me");
-
     expect(paragraphElement).toBeInTheDocument();
+
+    const displayValue = screen.getByDisplayValue("Hello Uzair");
+    expect(displayValue).toBeInTheDocument();
   });
 });
