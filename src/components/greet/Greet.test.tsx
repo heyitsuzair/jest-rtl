@@ -36,5 +36,12 @@ describe("Greet", () => {
 
     const labelWrapper = screen.getByLabelText("I Agree");
     expect(labelWrapper).toBeInTheDocument();
+
+    const placeHolder = screen.getByPlaceholderText("Enter Email");
+    expect(placeHolder).toBeInTheDocument();
+
+    const paragraphElement = screen.getByText("Greet Me");
+
+    expect(paragraphElement).toBeInTheDocument();
   });
 });
