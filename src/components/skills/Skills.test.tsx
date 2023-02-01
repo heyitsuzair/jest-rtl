@@ -34,4 +34,18 @@ describe("skills", () => {
 
     expect(startLearning).not.toBeInTheDocument();
   });
+  test("Start Learning Button Is Eventually Displayed", async () => {
+    render(<Skills skills={skills} />);
+    const startLearning = await screen.findByRole(
+      "button",
+      {
+        name: "Start Learning",
+      },
+      {
+        timeout: 2000,
+      }
+    );
+
+    expect(startLearning).toBeInTheDocument();
+  });
 });
